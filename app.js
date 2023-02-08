@@ -70,13 +70,31 @@ function process(textField) {
 }
 
 n1.addEventListener('keyup',(event)=>{
+    
     let textField = "en el campo 1"
-    process(textField)
+
+    if(n1.value <0 || n1.value >5 || n1.value === ""){
+        result.textContent='Ingrese un numero mayor o igual a 0 y menor o igual a 5 '+ textField
+        resultEnd.textContent = "⚠️"
+        process(textField)
+    }else{
+        process(textField)
+    }
+
 })
 
 n2.addEventListener('keyup',(event)=>{
+
     let textField = "en el campo 2"
-    process(textField)
+
+    if(n2.value <0 || n2.value >5 || n2.value === ""){
+        result.textContent='Ingrese un numero mayor o igual a 0 y menor o igual a 5 '+ textField
+        resultEnd.textContent = "⚠️"
+        process(textField)
+    }else{
+        process(textField)
+    }
+
 })
 
 clear.addEventListener("click",()=>{
