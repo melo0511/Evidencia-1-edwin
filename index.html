@@ -10,7 +10,7 @@
 <body>
     
     <header>
-        <h1>Cálculo de notas</h1>
+        <h1 id="title">Cálculo de notas</h1>
     </header>
 
     <main>
@@ -18,34 +18,40 @@
         <div id="Initial">
 
             <div id="containerNotes">
-                <input type="number" name="" id="n1">
-                <input type="number" name="" id="n2">
-                <input type="number" name="" id="n3">
+                <input type="number" name="" id="n1" placeholder="Nota 1">
+                <input type="number" name="" id="n2" placeholder="Nota 2">
+                <input type="number" name="" id="n3" placeholder="Nota 3">
             </div>
     
             <div id="containerResults">
-                <p id="win" placeholder="Nota1">Si, deseas recuperar necesitas: </p>
-                <p id="lost" placeholder="Nota2">Para ganar necesitas minimo: </p>
-                <p id="honor" placeholder="Nota3">Para ganar con honores necesitarias minimo</p>
+                <p id="recover" placeholder="Nota1">Si, deseas recuperar necesitas: </p>
+                <p id="win" placeholder="Nota2">Para ganar necesitas minimo: </p>
+                <p id="honor" placeholder="Nota3">Para ganar con honores necesitarias minimo: </p>
             </div>
 
         </div>
 
+    </main>
+
+    <footer>
+
         <h2 id="result">
-            Resultado
+            Promedio:
         </h2>
 
         <h2 id="resultEnd">
-            Resultado Final
+            Resultado Final:
         </h2>
 
-        <button id="calculate">Calcular</button>
+        <div id="containerButtons">
 
+            <button class="button" id="calculate">Calcular</button>
+            <button class="button" id="clear">Limpiar</button>
 
-    </main>
+        </div>
 
+    </footer>
 
-    
 </body>
 
 <script src="app.js"></script>
